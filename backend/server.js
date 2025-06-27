@@ -1,9 +1,11 @@
 const express = require('express')
 var cors = require('cors')
 const app = express()
-const PORT = 3000;
+const PORT = 6006;
 
-app.use(cors())
+app.use(cors({
+    origin:"*"
+}))
 app.use(express.json())
 
 app.get('/random',(req,res)=>{

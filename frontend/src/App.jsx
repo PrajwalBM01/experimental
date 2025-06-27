@@ -7,7 +7,7 @@ const App = () => {
 
 
   useEffect(()=>{
-    fetch('http://localhost:3000/random', {
+    fetch('http://localhost:6006/random', {
       method: 'GET'
     })
       .then(response => response.json())
