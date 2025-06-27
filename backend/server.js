@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.get('/random',(req,res)=>{
     res.json({
-        msg:"displaying a experimental number 012345"
+        msg:`${Math.random()}`
     })
 })
 
